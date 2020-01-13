@@ -6,7 +6,7 @@
         <!-- <form method="POST" action="send"> -->
         <!-- <form method="POST" action="send" @submit="submit" > -->
         <!-- <form id="contact-form" @submit="submit"> -->
-        <form name="contact-form" data-netlify="true">
+        <form name="contact-form" method="POST" data-netlify="true">
           <div id="name-container">
             <input class="text-box" type="text" id="name-input" placeholder="Name" name="name" required>
             <!-- <input class="text-box" type="text" id="name-input" v-model="contacter.name" placeholder="Name" required> -->
@@ -24,7 +24,8 @@
             <!-- <textarea class="text-box" id="message-textarea" v-model="contacter.message" placeholder="Message" required></textarea> -->
           </div>
           <div class="Button" id="send-button-container">
-            <input type="submit" id="send-button-submit" value="Send">
+            <!-- <input type="submit" id="send-button-submit" value="Send"> -->
+            <button type="submit" id="send-button-submit">Send</button>
           </div>
           <div id="warning-text">
             <span v-if="seen">This function is in progress. Please send your message directly to this mail: fatih @ ozcelik . dk :-)</span>
@@ -313,6 +314,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 
 #send-button-submit {
   font-size: 18px;
+  font-weight: 500;
   padding: 0.9%;
   color: $primary-color;
   background-color: transparent;
