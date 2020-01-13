@@ -7,6 +7,7 @@
         <!-- <form method="POST" action="send" @submit="submit" > -->
         <!-- <form id="contact-form" @submit="submit"> -->
         <form name="contact-form" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="ask-question" />
           <div id="name-container">
             <input class="text-box" type="text" id="name-input" placeholder="Name" name="name" required>
             <!-- <input class="text-box" type="text" id="name-input" v-model="contacter.name" placeholder="Name" required> -->
