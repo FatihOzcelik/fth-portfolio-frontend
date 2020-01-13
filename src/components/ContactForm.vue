@@ -293,26 +293,6 @@ input:-webkit-autofill {
     -webkit-text-fill-color: $text-color !important;
 }
 
-::-webkit-credentials-auto-fill-button {
-     visibility: hidden;
-}
-
-input::-webkit-textfield-decoration-container {
-  display: none; 
-}
-
-input::-webkit-caps-lock-indicator {
-}
-
-input::-webkit-credentials-auto-fill-button {
-}
-
-input::-ms-clear {
-}
-
-input::-ms-reveal {
-}
-
 @keyframes autofill {
     to {
         color: $text-color;
