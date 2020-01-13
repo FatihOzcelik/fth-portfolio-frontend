@@ -6,7 +6,7 @@
         <!-- <form method="POST" action="send"> -->
         <!-- <form method="POST" action="send" @submit="submit" > -->
         <!-- <form id="contact-form" @submit="submit"> -->
-        <form name="contact-form" method="POST" action="/" data-netlify="true">
+        <form name="contact-form" method="POST" data-netlify="true">
           <div id="name-container">
             <input class="text-box" type="text" id="name-input" placeholder="Name" name="name" required>
             <!-- <input class="text-box" type="text" id="name-input" v-model="contacter.name" placeholder="Name" required> -->
@@ -27,9 +27,9 @@
             <!-- <input type="submit" id="send-button-submit" value="Send"> -->
             <button type="submit" id="send-button-submit">Send</button>
           </div>
-          <div id="warning-text">
+          <!-- <div id="warning-text">
             <span v-if="seen">This function is in progress. Please send your message directly to this mail: fatih @ ozcelik . dk :-)</span>
-          </div>
+          </div> -->
         </form>
       </div>
     <!-- <span id="envelope-container" :class="reverseEnvelopeAnimation"> -->
