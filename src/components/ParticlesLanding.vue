@@ -144,6 +144,9 @@ export default {
 // }
 $bg-color: #153e4e;
 
+.particleslanding{
+    background-color: $bg-color;
+}
 
 #particles-js {
     width: 100%;

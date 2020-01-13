@@ -36,7 +36,7 @@
         Software Engineer
       </div>
       <div id="description" class="elements_under_fth">
-        Currenly focussed on full stack web development. I have touched every stage of software
+        Currenly focussed on frontend web development. I have touched every stage of software
         engineering phases and several platforms including mobile and desktop.
       </div>
       <router-link to="/contact">
