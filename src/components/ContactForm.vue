@@ -5,7 +5,8 @@
         <div class="title-label" id="title">Send a message</div>
         <!-- <form method="POST" action="send"> -->
         <!-- <form method="POST" action="send" @submit="submit" > -->
-        <form id="contact-form" @submit="submit">
+        <!-- <form id="contact-form" @submit="submit"> -->
+        <form method="POST" data-netlify="true">
           <div id="name-container">
             <input class="text-box" type="text" id="name-input" placeholder="Name" name="name" required>
             <!-- <input class="text-box" type="text" id="name-input" v-model="contacter.name" placeholder="Name" required> -->
@@ -86,56 +87,56 @@ export default {
   //     }
   //   }
   // },
-  data() {
-    return {
-      seen: false
-    }
-  },
-  methods: {
-    submit(e){
-      e.preventDefault();
+  // data() {
+  //   return {
+  //     seen: false
+  //   }
+  // },
+  // methods: {
+  //   submit(e){
+  //     e.preventDefault();
       
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "+=20",
-      });
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "-=20",
-        delay: 0.1,
-      });      
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "+=20",
-        delay: 0.2,
-      });      
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "-=20",
-        delay: 0.3,
-      });      
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "+=20",
-        delay: 0.4,
-      });      
-      window.gsap.to("#contact-form", {
-        duration: 0.1,
-        yoyo: "true",
-        x: "-=20",
-        delay: 0.5,
-      });     
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "+=20",
+  //     });
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "-=20",
+  //       delay: 0.1,
+  //     });      
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "+=20",
+  //       delay: 0.2,
+  //     });      
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "-=20",
+  //       delay: 0.3,
+  //     });      
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "+=20",
+  //       delay: 0.4,
+  //     });      
+  //     window.gsap.to("#contact-form", {
+  //       duration: 0.1,
+  //       yoyo: "true",
+  //       x: "-=20",
+  //       delay: 0.5,
+  //     });     
       
-      this.seen = true;
+  //     this.seen = true;
 
 
-    }
-  }
+  //   }
+  // }
 
   //     // var request = new XMLHttpRequest();
   //     // var url = "/send";
