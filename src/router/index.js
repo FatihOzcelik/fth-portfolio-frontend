@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import VueGtag from "vue-gtag";
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,11 @@ const routes = [
       import(/* webpackChunkName: "projects" */ "../views/Contact.vue")
   }
 ];
+
+//Analytics
+Vue.use(VueGtag, {
+  config: { id: "UA-156175373-1" }
+}, router);
 
 const router = new VueRouter({
   mode: "history",
