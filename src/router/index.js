@@ -38,7 +38,7 @@ Vue.use(VueGtag, {
 
 const router = new VueRouter({
   mode: "history",
-  base: "/src/router/index.js",
+  base: process.env.BASE_URL,
   routes
 });
 
