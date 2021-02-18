@@ -35,11 +35,6 @@ const routes = [
   }
 ];
 
-//Analytics
-Vue.use(VueGtag, {
-  config: { id: "UA-156175373-1" }
-}, router);
-
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
